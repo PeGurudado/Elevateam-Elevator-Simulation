@@ -1,0 +1,7 @@
+C:\Users\reipe\Downloads\ElevatorSimulator-master\ElevatorSimulator-master\ElevatorSimulator\bin\Debug\ElevatorSimulator.exe.config
+C:\Users\reipe\Downloads\ElevatorSimulator-master\ElevatorSimulator-master\ElevatorSimulator\bin\Debug\ElevatorSimulator.exe
+C:\Users\reipe\Downloads\ElevatorSimulator-master\ElevatorSimulator-master\ElevatorSimulator\bin\Debug\ElevatorSimulator.pdb
+C:\Users\reipe\Downloads\ElevatorSimulator-master\ElevatorSimulator-master\ElevatorSimulator\obj\Debug\ElevatorSimulator.csproj.AssemblyReference.cache
+C:\Users\reipe\Downloads\ElevatorSimulator-master\ElevatorSimulator-master\ElevatorSimulator\obj\Debug\ElevatorSimulator.csproj.CoreCompileInputs.cache
+C:\Users\reipe\Downloads\ElevatorSimulator-master\ElevatorSimulator-master\ElevatorSimulator\obj\Debug\ElevatorSimulator.exe
+C:\Users\reipe\Downloads\ElevatorSimulator-master\ElevatorSimulator-master\ElevatorSimulator\obj\Debug\ElevatorSimulator.pdb
