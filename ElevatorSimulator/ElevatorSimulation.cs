@@ -22,12 +22,33 @@ namespace ElevatorSimulator
                 20, // Number of building floors
                 1, // Elevator speed in floors per tick
                 9, // Ticks needed to load or unload a passenger
-                new uint[] { 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24},
+                new uint[] { 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24 },
                 // Residents on each floor
                 new uint[] { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 }
                 // Interest per floor
                 );
 
+                /*
+                ### Optimized AI
+
+                The optimized AI is given information about where the destination floor of the requests are without having to pick up the passenger.
+
+                The decision making follows this penalty minimization logic:
+
+                for each elevator
+                  if elevator idle
+                    penalty = wait time
+                  else if request on the way
+                    penalty = wait time + loading time (number of people waiting for and in this elevator)
+                  else
+                    penalty = time the elevator will take to service its current requests and come back
+
+                chose the option with the least penalty
+
+                ## Smart relocation
+                The smart relocation is a plugin system that can be plugged to any elevator AI. It tracks the distribution of requests that were made in the last half hour.
+                When an elevator is done servicing all its requests and becomes idle, it calculates its most optimal positioning in the building relative to the other elevators such that the waiting time for any new request is minimized (weighted by floor based on probability).
+                The probability distribution for new requests is approximated by the distribution that was tracked over the last half hour.*/
             Console.WriteLine("Configuration:\n" + config);
 
             var averageRequestsPerResidentPerDayList = new uint[]{ 2, 3 }; //Average Requests Per Resident
